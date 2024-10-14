@@ -7,9 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <Folder Include="Entities\SetUp\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Enums\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\T3.Domain.Shared\T3.Domain.Shared.csproj" />
+    <ProjectReference Include="..\T3.Shared\T3.Shared.csproj" />
   </ItemGroup>
 
 </Project>

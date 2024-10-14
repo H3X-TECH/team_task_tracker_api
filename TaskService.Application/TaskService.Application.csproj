@@ -8,8 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Services\Implementations\" />
-    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Queries\Task\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
 </Project>
