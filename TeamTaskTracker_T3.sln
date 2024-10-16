@@ -17,19 +17,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2D05BD95
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9198727E-BBC7-4769-B9CF-2552F748845F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrationService.UnitTests", "AdministrationService.UnitTests\AdministrationService.UnitTests.csproj", "{531F3DED-7003-493E-A08B-4561CEB6AE3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdministrationService.UnitTests", "AdministrationService.UnitTests\AdministrationService.UnitTests.csproj", "{531F3DED-7003-493E-A08B-4561CEB6AE3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrationService.IntegrationTests", "AdministrationService.IntegrationTests\AdministrationService.IntegrationTests.csproj", "{AC305978-129F-413D-BEC6-83AE6B9D667F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdministrationService.IntegrationTests", "AdministrationService.IntegrationTests\AdministrationService.IntegrationTests.csproj", "{AC305978-129F-413D-BEC6-83AE6B9D667F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrationService.FunctionalTests", "AdministrationService.FunctionalTests\AdministrationService.FunctionalTests.csproj", "{62771F5D-74D9-40B8-8BCD-0C63FA911793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdministrationService.FunctionalTests", "AdministrationService.FunctionalTests\AdministrationService.FunctionalTests.csproj", "{62771F5D-74D9-40B8-8BCD-0C63FA911793}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1D3C002F-46E6-42BF-90BC-B56CF25D9BBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T3.Domain.Shared", "T3.Domain.Shared\T3.Domain.Shared.csproj", "{AE5A154F-E541-4C7D-9CF9-6B5FA7987C81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T3.Domain.Shared", "T3.Domain.Shared\T3.Domain.Shared.csproj", "{AE5A154F-E541-4C7D-9CF9-6B5FA7987C81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T3.Shared", "T3.Shared\T3.Shared.csproj", "{93F87C9E-5C1B-447A-A59E-4E07F519F70D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T3.Shared", "T3.Shared\T3.Shared.csproj", "{93F87C9E-5C1B-447A-A59E-4E07F519F70D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T3.Infrastructure.Shared", "T3.Infrastructure.Shared\T3.Infrastructure.Shared.csproj", "{6F8E4C1B-0BAD-428F-AAE5-D6632DBA3C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T3.Infrastructure.Shared", "T3.Infrastructure.Shared\T3.Infrastructure.Shared.csproj", "{6F8E4C1B-0BAD-428F-AAE5-D6632DBA3C44}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskService", "TaskService", "{073E4AA2-266D-4720-9BA6-B1EE3A82FC60}"
 EndProject
@@ -37,19 +37,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{058AC89C-41D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3CFF5D69-FAFA-42F6-ADEB-D8D4A1210C00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService.Application", "TaskService.Application\TaskService.Application.csproj", "{C4B049AB-C6C6-4FAE-B635-8863E27385EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskService.Application", "TaskService.Application\TaskService.Application.csproj", "{C4B049AB-C6C6-4FAE-B635-8863E27385EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService.Domain", "TaskService.Domain\TaskService.Domain.csproj", "{806E812E-63FC-47EB-9A2F-CE55A6C2BCBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskService.Domain", "TaskService.Domain\TaskService.Domain.csproj", "{806E812E-63FC-47EB-9A2F-CE55A6C2BCBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService.Infrastructure", "TaskService.Infrastructure\TaskService.Infrastructure.csproj", "{2B2C4500-FFB7-4EAD-81B8-B6C9D9832E95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskService.Infrastructure", "TaskService.Infrastructure\TaskService.Infrastructure.csproj", "{2B2C4500-FFB7-4EAD-81B8-B6C9D9832E95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService.WebAPI", "TaskService.WebAPI\TaskService.WebAPI.csproj", "{A8781DAB-C75A-4113-9D49-A23BE6391889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskService.WebAPI", "TaskService.WebAPI\TaskService.WebAPI.csproj", "{A8781DAB-C75A-4113-9D49-A23BE6391889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService.UnitTests", "TaskService.UnitTests\TaskService.UnitTests.csproj", "{362E1CF8-E981-4680-8970-A60699BD35EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskService.UnitTests", "TaskService.UnitTests\TaskService.UnitTests.csproj", "{362E1CF8-E981-4680-8970-A60699BD35EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService.IntegrationTests", "TaskService.IntegrationTests\TaskService.IntegrationTests.csproj", "{C62946A9-689C-4569-AA42-018D54220184}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskService.IntegrationTests", "TaskService.IntegrationTests\TaskService.IntegrationTests.csproj", "{C62946A9-689C-4569-AA42-018D54220184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService.FunctionalTests", "TaskService.FunctionalTests\TaskService.FunctionalTests.csproj", "{56EE68CA-271E-4E50-80BB-F0B8BECA915E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskService.FunctionalTests", "TaskService.FunctionalTests\TaskService.FunctionalTests.csproj", "{56EE68CA-271E-4E50-80BB-F0B8BECA915E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{F51066FE-067C-4E66-A803-8945504AF527}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T3.ApiGateway", "T3.ApiGateway\T3.ApiGateway.csproj", "{BA2F0B13-7D47-4338-AFE0-B77D33907058}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F5157D17-714D-47C8-8CF0-82AAE97FB4CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +131,10 @@ Global
 		{56EE68CA-271E-4E50-80BB-F0B8BECA915E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56EE68CA-271E-4E50-80BB-F0B8BECA915E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56EE68CA-271E-4E50-80BB-F0B8BECA915E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2F0B13-7D47-4338-AFE0-B77D33907058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2F0B13-7D47-4338-AFE0-B77D33907058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2F0B13-7D47-4338-AFE0-B77D33907058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2F0B13-7D47-4338-AFE0-B77D33907058}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,6 +161,7 @@ Global
 		{362E1CF8-E981-4680-8970-A60699BD35EC} = {3CFF5D69-FAFA-42F6-ADEB-D8D4A1210C00}
 		{C62946A9-689C-4569-AA42-018D54220184} = {3CFF5D69-FAFA-42F6-ADEB-D8D4A1210C00}
 		{56EE68CA-271E-4E50-80BB-F0B8BECA915E} = {3CFF5D69-FAFA-42F6-ADEB-D8D4A1210C00}
+		{BA2F0B13-7D47-4338-AFE0-B77D33907058} = {F51066FE-067C-4E66-A803-8945504AF527}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8942A0E-2F94-462D-A2A3-E812D0FA31F4}
