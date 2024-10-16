@@ -8,5 +8,6 @@ namespace T3.Domain.Shared.Common
 {
     public class BaseEntity
     {
+
     }
 }
