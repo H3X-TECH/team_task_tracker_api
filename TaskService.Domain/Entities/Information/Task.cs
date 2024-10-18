@@ -15,6 +15,7 @@ namespace TaskService.Domain.Entities.Information
         public Status Status { get; set; }
         public string ProjectId { get; set; }
         public string AssignedTo { get; set; }
+        public DateTime StartTime { get; set; }
         public DateTime DueDate { get; set; }
     }
 }
