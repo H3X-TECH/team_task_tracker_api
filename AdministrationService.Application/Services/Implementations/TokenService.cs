@@ -28,8 +28,8 @@ namespace AdministrationService.Application.Services.Implementations
 
             var claims = new[]
             {
-            new Claim(JwtRegisteredClaimNames.Sub, userId),
-            new Claim(ClaimTypes.Role, userRole),
+            new Claim(JwtRegisteredClaimNames.Name, userId),
+            new Claim("role", userRole),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
