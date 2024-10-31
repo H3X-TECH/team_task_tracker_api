@@ -29,6 +29,8 @@ namespace AdministrationService.WebAPI
                 {
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Secret"]))
                 };
             }
