@@ -34,10 +34,10 @@ namespace AdministrationService.Application.Services.Implementations
             };
 
             var tokenOptions = new JwtSecurityToken(
-                issuer: jwtSettings["Issuer"],
+                //issuer: jwtSettings["Issuer"],
                 //audience: jwtSettings["Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(Convert.ToDouble(jwtSettings["ExpiryMinutes"])),
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(jwtSettings["ExpiryMinutes"])),
                 signingCredentials: signingCredentials
             );
 

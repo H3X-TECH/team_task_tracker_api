@@ -1,6 +1,7 @@
 ﻿using AdministrationService.Application.Model;
 using AdministrationService.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography;
 
 namespace AdministrationService.WebAPI.Controllers
 {
@@ -17,6 +18,8 @@ namespace AdministrationService.WebAPI.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<AuthTokenResponse>> Login(LoginRequest loginRequest)
         {
+            var secretKey = Convert.ToBase64String(RandomNumberGenerator.GetBytes(32)); // 256-bit key
+
             AuthTokenResponse response = new AuthTokenResponse();
             if (IsValidUser(loginRequest.Username, loginRequest.Password))
             {
@@ -32,5 +35,7 @@ namespace AdministrationService.WebAPI.Controllers
         {
             return username == "testUser" && password == "password";
         }
+
+
     }
 }
