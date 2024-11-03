@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AdministrationService.Domain.Entities
 {
-    public class UserVerification
+    public class UserVerification : BaseEntity
     {
-        public string VerificationId { get; set; }
+        public string UserVerificationId { get; set; }
         public string UserId { get; set; }
         public string Token { get; set; }
         public DateTime ExpireAt { get; set; }
