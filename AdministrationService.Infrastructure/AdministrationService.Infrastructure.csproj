@@ -9,6 +9,11 @@
   <ItemGroup>
     <ProjectReference Include="..\AdministrationService.Application\AdministrationService.Application.csproj" />
     <ProjectReference Include="..\AdministrationService.Domain\AdministrationService.Domain.csproj" />
+    <ProjectReference Include="..\T3.Infrastructure.Shared\T3.Infrastructure.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
   </ItemGroup>
 
 </Project>

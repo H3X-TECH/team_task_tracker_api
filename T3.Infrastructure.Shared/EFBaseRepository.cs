@@ -11,5 +11,12 @@ namespace T3.Infrastructure.Shared
 {
     public class EFBaseRepository<TDbContext,TEntity> : IBaseRepository where TDbContext : DbContext where TEntity : BaseEntity
     {
+        protected readonly TDbContext _dbContext;
+        public EFBaseRepository(TDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+
     }
 }

@@ -1,0 +1,1 @@
+﻿global using T3.Domain.Shared.Common;
