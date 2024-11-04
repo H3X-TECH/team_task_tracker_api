@@ -1,6 +1,8 @@
 
+using AdministrationService.Application;
 using AdministrationService.Application.Services.Implementations;
 using AdministrationService.Application.Services.Interfaces;
+using AdministrationService.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -14,6 +16,8 @@ namespace AdministrationService.WebAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.RegisterApplicationDependencies();
+            builder.Services.RegisterInfraDependencies(builder.Configuration);
 
             #region Authentication
             //Add Jwt Authentication
