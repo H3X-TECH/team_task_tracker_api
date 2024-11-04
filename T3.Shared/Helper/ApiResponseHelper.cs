@@ -9,9 +9,9 @@ namespace T3.Shared.Helper
 {
     public static class ApiResponseHelper<T> where T : class
     {
-        public static ActionResult GenerateResponse(ApiResponse<T> response)
-        {
+        //public static ActionResult GenerateResponse(ApiResponse<T> response)
+        //{
 
-        }
+        //}
     }
 }
