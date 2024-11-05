@@ -17,8 +17,8 @@ namespace AdministrationService.Infrastructure.Configurations
             builder.HasKey(u => u.UserId);
             builder.HasOne(u => u.UserCredentials)
                    .WithOne(uc => uc.UserInfo)
-                   .HasForeignKey<UserCredential>(uc => uc.UserId)
-                   .OnDelete(DeleteBehavior.Cascade);
+                   .HasForeignKey<UserCredential>(uc => uc.UserId);
+
         }
     }
 
@@ -27,6 +27,14 @@ namespace AdministrationService.Infrastructure.Configurations
         public void Configure(EntityTypeBuilder<UserCredential> builder)
         {
             builder.HasKey(uc => uc.UserId);
+
+
+            //builder.Property(uc => uc.UserId)  // Specify the foreign key if it's not nullable
+            //       .IsRequired();
+
+            //builder.HasOne(uc => uc.UserInfo)
+            //       .WithOne(u => u.UserCredentials)
+            //       .HasForeignKey<UserCredential>(uc => uc.UserId);
         }
     }
 
