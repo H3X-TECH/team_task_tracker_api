@@ -10,5 +10,6 @@ namespace AdministrationService.Application.Services.Implementations
     public class UserService : IUserService
     {
 
+
     }
 }
