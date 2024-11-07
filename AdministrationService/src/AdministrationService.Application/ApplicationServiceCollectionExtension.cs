@@ -15,11 +15,14 @@ namespace AdministrationService.Application
         public static void RegisterApplicationDependencies(this IServiceCollection services)
         {
             #region User
-            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserInfoService, UserInfoService>();
             #endregion
 
             #region Token
             services.AddScoped<ITokenService, TokenService>();
+            #endregion
+
+            #region Password
             #endregion
         }
     }

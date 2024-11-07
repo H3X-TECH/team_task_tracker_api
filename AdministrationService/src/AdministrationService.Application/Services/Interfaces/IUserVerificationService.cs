@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdministrationService.Application.Services.Interfaces
 {
-    public interface IUserService
+    public interface IUserVerificationService
     {
     }
 }

@@ -9,16 +9,16 @@ namespace AdministrationService.UnitTests
 {
     public class UserRegistrationTests
     {
-        private readonly IUserService _userService;
-        public UserRegistrationTests(IUserService userService)
+        private readonly IUserInfoService _userService;
+        public UserRegistrationTests(IUserInfoService userService)
         {
             _userService = userService;
         }
 
-        [Fact]
-        public void CreateUser_WithValidInput_ReturnSuccess()
-        {
+        //[Fact]
+        //public void CreateUser_WithValidInput_ReturnSuccess()
+        //{
 
-        }
+        //}
     }
 }
