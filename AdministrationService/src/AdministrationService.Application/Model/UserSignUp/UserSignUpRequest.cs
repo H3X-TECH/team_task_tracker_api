@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdministrationService.Application.Model.UserRegistration
 {
-    public class UserRegistrationRequest
+    public class UserSignUpRequest
     {
         public string UserName { get; set; }
         public string Email { get; set; }
