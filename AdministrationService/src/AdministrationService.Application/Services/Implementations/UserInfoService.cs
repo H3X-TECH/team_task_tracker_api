@@ -2,11 +2,13 @@
 using AdministrationService.Application.Services.Interfaces;
 using AdministrationService.Domain.Entities;
 using AdministrationService.Domain.Interfaces;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using T3.Shared;
 
 namespace AdministrationService.Application.Services.Implementations
 {
@@ -20,7 +22,7 @@ namespace AdministrationService.Application.Services.Implementations
         }
 
         #region Create UserInfo
-        public async Task<string> Create(CreateUserInfo createModel)
+        public async Task<ApiResponse<CreateUserInfo>> Create(CreateUserInfo createModel)
         {
             UserInfo userInfo = new UserInfo
             {
@@ -31,14 +33,22 @@ namespace AdministrationService.Application.Services.Implementations
             };
 
             await  _userInfoRepository.AddAsync(userInfo);
-            return "";
+            return ApiResponse<CreateUserInfo>.Created(createModel);
         }
         #endregion
 
         #region Update UserInfo
+        public async Task<string> Update(UpdateUserInfo updateModel)
+        {
+            return "";
+        }
         #endregion
 
         #region Delete UserInfo
+        public async Task<string> Delete(string Id)
+        {
+            return "";
+        }
         #endregion
 
     }
