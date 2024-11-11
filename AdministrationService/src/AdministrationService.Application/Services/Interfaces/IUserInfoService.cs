@@ -1,4 +1,5 @@
 ﻿using AdministrationService.Application.Model.UserInfo;
+using AdministrationService.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace AdministrationService.Application.Services.Interfaces
 {
     public interface IUserInfoService
     {
-        Task<ApiResponse<CreateUserInfo>> Create(CreateUserInfo createModel);
+        Task<UserInfo> Create(CreateUserInfo createModel);
     }
 }

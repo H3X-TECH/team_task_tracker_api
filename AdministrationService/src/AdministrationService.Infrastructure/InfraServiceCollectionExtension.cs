@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using T3.Domain.Shared.Interfaces;
+using T3.Infrastructure.Shared.UnitOfWork;
 
 namespace AdministrationService.Infrastructure
 {
@@ -21,6 +23,10 @@ namespace AdministrationService.Infrastructure
             services.AddScoped<IUserCredentialRepository,UserCredentialRepository>();
             services.AddScoped<IUserInfoRepository,UserInfoRepository>();
             services.AddScoped<IUserVerificationRepository,UserVerificationRepository>();
+            #endregion
+
+            #region UnitOfWork
+            services.AddScoped<IUnitOfWork, UnitOfWork<AdministrationDbContext>>();
             #endregion
         }
     }

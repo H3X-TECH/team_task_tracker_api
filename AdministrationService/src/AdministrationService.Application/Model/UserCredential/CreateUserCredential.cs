@@ -8,5 +8,7 @@ namespace AdministrationService.Application.Model.UserCredential
 {
     public class CreateUserCredential
     {
+        public string UserId { get; set; }
+        public string Password { get; set; }
     }
 }

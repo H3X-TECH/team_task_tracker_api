@@ -7,11 +7,7 @@ using System.Threading.Tasks;
 
 namespace AdministrationService.Application.Services.Implementations
 {
-    public class UserVerificationService : IUserVerificationService
+    public class UserService : IUserService
     {
-        public UserVerificationService()
-        {
-            
-        }
     }
 }

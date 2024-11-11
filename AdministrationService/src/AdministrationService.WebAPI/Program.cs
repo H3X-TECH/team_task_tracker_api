@@ -4,8 +4,10 @@ using AdministrationService.Application.Services.Implementations;
 using AdministrationService.Application.Services.Interfaces;
 using AdministrationService.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using T3.Shared.Middleware;
 
 namespace AdministrationService.WebAPI
 {
@@ -58,6 +60,8 @@ namespace AdministrationService.WebAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             app.UseHttpsRedirection();
 

@@ -1,5 +1,7 @@
 ﻿using AdministrationService.Application.Services.Implementations;
 using AdministrationService.Application.Services.Interfaces;
+using AdministrationService.Application.Util.Implementations;
+using AdministrationService.Application.Util.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,7 @@ namespace AdministrationService.Application
         {
             #region User
             services.AddScoped<IUserInfoService, UserInfoService>();
+            services.AddScoped<IUserCredentialService, UserCredentialService>();
             #endregion
 
             #region Token
@@ -23,6 +26,7 @@ namespace AdministrationService.Application
             #endregion
 
             #region Password
+            services.AddScoped<IPasswordService,PasswordService>();
             #endregion
         }
     }

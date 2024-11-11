@@ -11,10 +11,10 @@ namespace AdministrationService.Domain.Entities
     {
         public string UserId { get; set; }
         public string PasswordHash { get; set; }
-        public string PasswordSalt { get; set; }
+        //public string PasswordSalt { get; set; }
         public DateTime LastPasswordChangeDate { get; set; }
 
         //navigation property back to UserInfo
-        public UserInfo UserInfo { get; set; }
+        public virtual UserInfo UserInfo { get; set; }
     }
 }
