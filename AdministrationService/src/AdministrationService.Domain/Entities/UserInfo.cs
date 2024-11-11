@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace AdministrationService.Domain.Entities
@@ -16,6 +17,7 @@ namespace AdministrationService.Domain.Entities
         public DateTime UpdatedDate { get; set; }
 
         //Navigate property for related UserCredentials 
-        public UserCredential UserCredentials { get; set; }
+        [JsonIgnore]
+        public virtual UserCredential UserCredentials { get; set; }
     }
 }
