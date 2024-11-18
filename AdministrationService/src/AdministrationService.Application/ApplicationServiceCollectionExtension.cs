@@ -19,6 +19,8 @@ namespace AdministrationService.Application
             #region User
             services.AddScoped<IUserInfoService, UserInfoService>();
             services.AddScoped<IUserCredentialService, UserCredentialService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserVerificationService, UserVerificationService>();
             #endregion
 
             #region Token
